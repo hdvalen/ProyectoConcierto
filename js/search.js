@@ -1,7 +1,8 @@
 const SearchList = [ 
     "Events Near You",
     "Trending eventes",
-    "Music Concert"
+    "Music Concert",
+    "Stand Up Show"
 ]
 
 const resultBox = document.querySelector(
