@@ -4,44 +4,44 @@ const SearchList = [
     "Music Concert"
 ]
 
-const ResultBox = document.querySelector(
+const resultBox = document.querySelector(
     ".results"
 );
 
-const InputBox = document.querySelector(
+const inputBox = document.querySelector(
     ".search-bar"
 );
 
-const DisplayResults = function (result){
+const displayResults = function (result){
     const resultHTML = result.map(function (busqueda){
         return `<li onclick=selectInput(this)> 
             ${busqueda} 
         </li> `;
     });
 
-    ResultBox.innerHTML ='<ul>' + 
-        ResultBox.join("") + 
+    resultBox.innerHTML ='<ul>' + 
+        resultHTML.join("") + 
     '</ul>';
 }
 
-InputBox.onkeyUp = function(e){
+InputBox.onkeyup = function(e){
     let result = [ ];
 
-    const input = InputBox.ariaValueMax.toLowerCase();
+    const input = InputBox.value.toLowerCase();
 
     if (input.length === 0){
-        ResultBox.innerHTML="";
+        resultBox.innerHTML="";
     }
 
     if(input.length){
         result =SearchList.filter((busqueda)=> {
             return busqueda.toLowerCase().includes(input);
         });
-        DisplayResults(result);
+        displayResults(result);
     }
 };
 
 function selectInput(busqueda){
     InputBox.value = busqueda.innerText;
-    ResultBox.innerHTML="";
+    resultBox.innerHTML="";
 }
