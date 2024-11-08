@@ -1,0 +1,186 @@
+.subTittle{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 5px;
+    margin-left: 5px;
+  }
+/*container 1 */
+.container-inf{
+    position: relative;
+    width: 330px;
+    height: 100px;
+    left: 13px ;
+    bottom: 120px;
+    background-color: #2d264bb9;
+    border-radius: 15px;
+    padding: 10px;
+    color: white;
+    font-size: small;
+  }
+  .container-inf:nth-child(2){
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-right: 10px;
+  }
+  .precio{
+    margin-top: 20px;
+  }
+  /*container 2*/
+  .container-inf2{
+    position: relative;
+    width: 330px;
+    height: 100px;
+    left: 13px ;
+    bottom: 120px;
+    background-color: #304b26b9;
+    border-radius: 15px;
+    padding: 10px;
+    color: white;
+    font-size: small;
+  }
+  .container-inf2:nth-child(2){
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-right: 10px;
+  }
+  .precio2{
+    margin-top: 20px;
+  }
+  /*container 3*/
+  .container-inf3{
+    position: relative;
+    width: 340px;
+    height: 100px;
+    left: 17px ;
+    bottom: 120px;
+    background-color: #262a4bb9;
+    border-radius: 15px;
+    padding: 10px;
+    color: white;
+    font-size: small;
+  }
+  .container-inf3:nth-child(2){
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-right: 10px;
+  }
+  .precio3{
+    margin-top: 20px;
+  }
+
+  /*container 4*/
+  .container-inf4{
+    position: relative;
+    width: 315px;
+    height: 100px;
+    left: 17px ;
+    bottom: 120px;
+    background-color: #5a352eb9;
+    border-radius: 15px;
+    padding: 10px;
+    color: white;
+    font-size: small;
+  }
+  .container-inf4:nth-child(2){
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-right: 10px;
+  }
+  .precio4{
+    margin-top: 20px;
+  }
+  /*container 5*/
+  .container-inf5{
+    position: relative;
+    width: 320px;
+    height: 100px;
+    left: 17px ;
+    bottom: 120px;
+    background-color: #4b4226b9;
+    border-radius: 15px;
+    padding: 10px;
+    color: white;
+    font-size: small;
+  }
+  .container-inf5:nth-child(2){
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-right: 10px;
+  }
+  .precio5{
+    margin-top: 20px;
+  }
+
+
+/* Contenedor general del carrusel para manejar posición de las flechas */
+.carousel-container {
+    position: relative; /* Posiciona las flechas dentro del contenedor */
+    display: flex;
+    align-items: center;
+  }
+  .carousel-item {
+    flex: 1;
+   flex-grow: 1;
+    margin: 0 5px;
+  }
+  /* Estilos del carrusel */
+  .carousel {
+    display: flex;
+    overflow-x: hidden;
+    width: 100%;
+    height: 100%;
+  }
+  
+  /* Flechas de navegación */
+  .carousel-arrow {
+    position: absolute;
+    top: 10px; /* Centra verticalmente */
+    font-size: 24px;
+    color: #5e5e5e;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 5px;
+    border-radius: 50%;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transform: translateY(-50%); /* Centra en el eje Y */
+    z-index: 2;
+  }
+  
+  /* Posiciona la flecha izquierda a la izquierda */
+  .left-arrow {
+    left: 10px;
+    top: 450px;
+  }
+  
+  /* Posiciona la flecha derecha a la derecha */
+  .right-arrow {
+    right: 10px;
+    top: 450px;
+  }
+  
+  /* Efecto hover para las flechas */
+  .carousel-arrow:hover {
+    background-color: rgba(133, 133, 133, 0.2);
+    color: #000000;
+  }
+  
+  /* Habilita las flechas solo en pantallas grandes */
+  @media (min-width: 768px) {
+    .carousel-arrow {
+      display: block;
+    }
+  }
+  
+  /* Permite el desplazamiento manual en pantallas pequeñas */
+  @media (max-width: 768px) {
+    .carousel {
+      overflow-x: scroll;
+      scroll-behavior: smooth;
+    }
+  }
+  
