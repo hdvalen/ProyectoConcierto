@@ -133,7 +133,7 @@
     display: flex;
     overflow-x: hidden;
     width: 100%;
-    height: 100%;
+    justify-content: space-around;
   }
   
   /* Flechas de navegación */
@@ -169,8 +169,8 @@
     color: #000000;
   }
   
-  /* Habilita las flechas solo en pantallas grandes */
-  @media (min-width: 768px) {
+  /* Habilita las flechas solo en pantallas medianas */
+  @media (min-width: 668px) {
     .carousel-arrow {
       display: block;
     }

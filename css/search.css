@@ -17,7 +17,7 @@
     border-radius: 0.5rem;
     padding: 0.75rem;
     max-width: 81rem; /* Tamaño  en pantalla grande */
-    width: 100%;
+    width: 80%;
     height: fit-content;
     box-shadow: rgb(149, 157, 168, 0.2) 0px 8px 24px;
 }
