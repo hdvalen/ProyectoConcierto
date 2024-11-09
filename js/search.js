@@ -25,7 +25,7 @@ const displayResults = function (result){
     '</ul>';
 }
 
-InputBox.onkeyup = function(e){
+inputBox.onkeyup = function(e){
     let result = [ ];
 
     const input = InputBox.value.toLowerCase();
