@@ -5,7 +5,7 @@
 body{
     font-family: 'Poppins', sans-serif;
 }
-header{
+.Contenedor{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -49,39 +49,70 @@ iframe{
 .container3{
     display: flex;
     flex-direction: row;
-    width: 800px;
-    margin-left: 15px;
-    margin-right: 15px;
-    top: 110px;
-    left: 280px;
+    justify-content: space-between;
+    position: fixed;       /* Fija el contenedor en la pantalla */
+    bottom: 10px;          /* Ubicación desde la parte inferior */
+    right: 20px;           /* Ubicación desde la parte derecha */
+    width: 1250px;          /* Ancho del contenedor */
+    padding: 15px;
+    background-color: #f0f0f0;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para destacar */
+    z-index: 1000;  
     
 }
 
-footer{
-    margin-top: 20px;
-    position: fixed;
-    background-color: white;
-    width: 1350;
+a{
+    background-color: blueviolet;
+    border: 0;
+    border-radius: 15px;
+    padding: 10px;
+    text-decoration: none;
+    color: white;
 }
+
+a:hover{
+    background-color: #441372;
+    color: aliceblue;
+    transform: scale(1.05); 
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+
+}
+
+.container3{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: fixed;       
+    bottom: 10px;          
+    right: 20px;           
+    width: 1250px;          
+    padding: 15px;
+    background-color: #f0f0f0;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); 
+    z-index: 1000;  
+    
+}
+
+
 
 
 @media (max-width: 768px) {
     .container1{
         width: 300px;
-        left: 25px;
-        bottom: 300px;
+        left: 70px;
+        bottom: 450px;
     }
     .imagen{
         position: relative;
-        width: 400px; 
+        width: 500px; 
         height: 300px; 
         
     }
     .container2{
         position: relative;
-        top: 60px;
-        left: 20px;
-        width: 320px;
+        top: 90px;
+        left: 40px;
+        width: 400px;
     }
     iframe{
         position: relative;
@@ -89,5 +120,8 @@ footer{
         width: 300px;
         height: 300px;
 
+    }
+    .container3{
+        width: 430px;
     }
 }
