@@ -16,12 +16,19 @@ body{
     font-size: 40px;
     margin-top: 0;
 }
+.link-ticket{
+  text-decoration: none;
+  color: white;
+}
+.link-ticket:hover{
+  color: plum;
+}
 .tittle2{
-
     color: purple;
     font-size: 40px;
     margin-top: 0;
 }
+
  /*Icono de Notificacion*/
 .icono_not{
     margin: 15px;

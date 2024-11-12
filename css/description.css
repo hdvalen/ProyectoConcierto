@@ -4,7 +4,85 @@
 }
 body{
     font-family: 'Poppins', sans-serif;
+    
 }
+.flecha-reg{
+    position: relative;
+    bottom: 300px;
+    z-index: 10;
+    margin-left: 20px;
+    margin-top: 15px;
+}
+.read-more{
+    position: absolute;
+    width: 100px;
+    text-align: justify;
+    background: linear-gradient(to top, #fff);
+    cursor: pointer;
+    height: 30px;
+}
+.read-more:hover{
+    background: linear-gradient(to top, transparent);
+    max-height: 200px;
+}
+/* Boton con contenedor emergente 
+
+.ticket-button:focus {
+    outline: none;
+    border: 0.0625rem solid transparent;
+    box-shadow: 0 0 0 0.125rem #fff, 0 0 0 0.2rem var(--dark-color-bg);
+  }
+  
+  .ticket-button.cta {
+    background-color: var(--cta-color);
+    color: white;
+  }
+  
+  .ticket-button.cta:focus {
+    box-shadow: 0 0 0 0.125rem #fff, 0 0 0 0.2rem var(--cta-color);
+  }
+  
+  #ticket-button{
+    margin: 0 auto;
+  }
+  
+  dialog {
+    border: none !important;
+    border-radius: calc(5px * var(--ratio));
+    box-shadow: 0 0 #0000, 0 0 #0000, 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+    padding: 1.6rem;
+    max-width: 400px;
+  }
+  
+  dialog img {
+    display: block;
+    max-width: 75%;
+    margin: 1rem 0 auto 2rem;
+  }
+  
+  .h1 {
+    margin: 2rem 0 1rem;
+    font-weight: 900;
+  }
+  
+  .h2 {
+    margin: 2rem 0 1rem;
+    font-weight: 800;
+  }
+  .flex {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .flex.flex-space-between {
+    justify-content: space-between;
+  }
+  
+  .flex button {
+    margin: 8px auto;
+  }
+*/
+/*contenedores*/  
 .Contenedor{
     display: flex;
     flex-direction: column;
@@ -12,21 +90,21 @@ body{
 }
 .container1{
   position:absolute;
-  bottom: 250px;
-  left: 280px;
+  bottom: 400px;
+  left: 500px;
   border-radius: 10px;
-  box-shadow: 1px 1px 20px 1px rgb(184, 184, 184);
+  box-shadow: 1px 1px 20px 1px #e9e8e8;
   padding: 8px;
   margin-left: 15px;
   margin-right: 10px;
   width: 800px;
-  z-index: 10;
+  z-index: 5;
   background-color: white;
-    
+ 
 }
 .imagen{
     position: relative;
-    width: 1350px; 
+    width: 1730px; 
     height: 300px; 
     z-index: 5;
 }
@@ -35,11 +113,13 @@ body{
     width: 800px;
     margin-left: 15px;
     margin-right: 15px;
-    top: 190px;
-    left: 280px;
+    top: 100px;
+    left: 480px;
 }
 .text{
     text-align: justify;
+    max-height: 100px;
+    overflow: hidden;   
 }
 iframe{
     border-radius: 10px;
@@ -54,15 +134,16 @@ iframe{
     position: fixed;      
     bottom: 10px;          
     right: 20px;        
-    width: 1250px;         
+    width: 1500px;         
     padding: 15px;
     background-color: #f0f0f0;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
     z-index: 1000;  
+    left: 250px;
     
 }
 
-a{
+.ticket-button{
     background-color: blueviolet;
     border: 0;
     border-radius: 15px;
@@ -71,7 +152,7 @@ a{
     color: white;
 }
 
-a:hover{
+.ticket-button:hover{
     background-color: #441372;
     color: aliceblue;
     transform: scale(1.05); 
@@ -95,12 +176,10 @@ a:hover{
 }
 
 
-
-
 @media (max-width: 768px) {
     .container1{
-        width: 300px;
-        left: 70px;
+        width: 350px;
+        left: 50px;
         bottom: 450px;
     }
     .imagen{
@@ -124,6 +203,6 @@ a:hover{
 
     }
     .container3{
-        width: 430px;
+        width: 440px;
     }
 }
