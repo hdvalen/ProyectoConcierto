@@ -79,3 +79,7 @@
     -readMore.js: JavaScript para la funcionalidad de Leer Mas en la pagina de descrption.
 
     -search.js: JavaScript para la funcionalidad de la barra de busqueda.
+
+## Link para visualizar la pagina 
+
+    Link: https://eventmusica.netlify.app/
