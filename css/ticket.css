@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.flecha-regreso{
+    margin-top: 20px;
+    margin-left: 30px;
+}
+.carousel {
+    display: flex;
+    flex-direction: row;
+    height: 600px;
+    overflow-x: scroll;   
+}
+.carousel-item {    
+    flex: 1;
+    flex-grow: 1;
+    min-width: 29%;
+    background-color: #ffffff;
+    margin:  20px;
+    border-radius: 15px;
+    padding: 5px;
+    box-shadow: 1px 1px 20px 1px rgb(184, 184, 184);
+    flex: 1;
+    flex-grow: 1;
+}
+
+.container{
+    margin-left: 20px;
+    margin-top: 15px;
+    overflow-x: hidden;
+}
+
+.container1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 5px;
+    margin-left:20px ;
+    margin-right: 30px;
+    margin-bottom: 20px;
+}
+.image{
+    margin-left: 20px;
+    margin-top: 10px;
+    width: 352px;
+}
+.image2{
+    margin-left: 40px;
+    width: 300px;
+    height: 100px;
+}
+
+
+/*carrousel*/
+
+/* Contenedor general del carrusel para manejar posición de las flechas */
+.carousel-container {
+    position: relative; /* Posiciona las flechas dentro del contenedor */
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Flechas de navegación */
+  .carousel-arrow {
+    position: absolute;
+    top: 10px; /* Centra verticalmente */
+    font-size: 24px;
+    color: #5e5e5e;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 5px;
+    border-radius: 50%;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transform: translateY(-50%); /* Centra en el eje Y */
+    z-index: 2;
+  }
+  
+  /* Posiciona la flecha izquierda a la izquierda */
+  .left-arrow {
+    left: 10px;
+    top: 400px;
+  }
+  /* Posiciona la flecha derecha a la derecha */
+  .right-arrow {
+    right: 10px;
+    top: 400px;
+  }
+  
+  /* Efecto hover para las flechas */
+  .carousel-arrow:hover {
+    background-color: rgba(133, 133, 133, 0.2);
+    color: #000000;
+  }
+  
+  /* Habilita las flechas solo en pantallas medianas */
+  @media (min-width: 768px) {
+    .carousel-arrow {
+      display: block;
+    }
+  }
+  
+  /* Permite el desplazamiento manual en pantallas pequeñas */
+  @media (max-width: 768px) {
+    .carousel {
+      overflow-x: scroll;
+      scroll-behavior: smooth;
+    }
+  }
