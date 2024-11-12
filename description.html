@@ -9,6 +9,7 @@
 </head>
 <body>
     <header>
+         <!-- Imagen principal del evento con enlace de regreso -->
     <div class="Contenedor">
         <div>
         <div>      
@@ -18,6 +19,7 @@
             </div>
         </div>
         <br>
+        <!-- Información principal del evento como nombre, ubicación y fecha -->
             <div class="container1">
                 <strong>Coldplay</strong> <strong style="color: purple;">: Music of the Spheres</strong><br> <br>
                 <img src="images/Vector.png" alt="location"> Gelora Bung Karno Stadium, Jakarta  <br><br>
@@ -26,6 +28,7 @@
             </div>
         </div>
         <br><br>
+        <!-- Descripción del evento con opción para leer más -->
         <div class="container2">
             <h3 class="tittle">Descripcion</h3>
             <p class="text">Integer id augue iaculis, iaculis orci ut, blandit quam. Donec in elit auctor, finibus quam in, phar. Proin id ligula dictum, 
@@ -34,6 +37,7 @@
             <a href="#"  class="read-more">Read More..</a>
             <br>
             <br>
+             <!-- Ubicación y mapa interactivo del evento -->
             <h3>Venuw & Location</h3> <br>
             <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15837.950095756561!2d-73.12388465!3d7.069333800000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sco!4v1731079909896!5m2!1ses!2sco" width="600" height="450"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
@@ -44,23 +48,13 @@
             <p>Start from</p>
             <strong>IDR1.100.000</strong>
             </div>
-            <!-- contenedor emergente -->
-            <main>
-          
-            <button id="open_dialog">Buy Ticket</button>
-          
-            <dialog aria-labelledby="dialog_title" aria-describedby="dialog_description">
-              <img src="https://native-dialog.surge.sh/location-service.svg" alt="Illustration of Location Services" />
-              <h2 id="dialog_title" class="h2">Use location services?</h2>
-              <div class="flex flex-space-between">
-                <button id="close_dialog">Close</button>
-                <button id="confirm_dialog" class="cta">Confirm</button>
-              </div>
-            </dialog>
-          </main>
+            <div>
+            <a href="ticket.html" class="button-ticket">Buy Ticket</a>
+            </div>
         </div>
      </footer>
     </div>
+    <!-- Scripts para la funcionalidad adicional del contenedor y botón de leer más -->
     <script src="js/contenedor.js"></script>
     <script src="js/readMore.js"></script>
 </body>

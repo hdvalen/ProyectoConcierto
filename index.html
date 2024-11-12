@@ -6,30 +6,132 @@
     <title>Cover</title>
 </head>
 <style>
+
     *{
         margin: 0;
+        padding: 0;
     }
- 
+    /* Imagen del teléfono */
     .Phones{
         position: relative;
-        left: 1000px;
-        height: 925px;
-        width: 850px;       
+        left: 530px;
+        height: 633px;
+        width: 830px;   
     }
+     /* Estilos del título */
+    .tittle{
+        position: absolute;
+        left: 70px;
+        top: 100px;
+        color: #a10995;
+        font-size: 7.5rem;
+        margin: 0;
+    }
+    /* Estilos de la lista */
+     ul {
+        position: relative;
+        bottom: 400px;
+        left: 90px;
+        list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+/* Botón de inicio */
+ ul li {
+    --c: rgb(135, 10, 151);
+    color: rgb(25, 3, 29);
+    font-size: 16px;
+    border: 0.3em solid var(--c);
+    border-radius: 0.5em;
+    width: 12em;
+    height: 3em;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: sans-serif;
+    letter-spacing: 0.1em;
+    text-align: center;
+    line-height: 3em;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    transition: 0.5s;
+    margin: 1em;
+}
+/* Efecto de animación en cada sección del botón */
+span {
+    position: absolute;
+    width: 25%;
+    height: 100%;
+    background-color: var(--c);
+    transform: translateY(150%);
+    border-radius: 50%;
+    left: calc((var(--n) - 1) * 25%);
+    transition: 0.5s;
+    transition-delay: calc((var(--n) - 1) * 0.1s);
+    z-index: -1;
+}
+
+ /* Hover para animar el botón */
+ ul li:hover span {
+    transform: translateY(0) scale(2);
+}
+/* Definición de cada sección de animación */
+span:nth-child(1) {
+    --n: 1;
+}
+span:nth-child(2) {
+    --n: 2;
+}
+
+span:nth-child(3) {
+    --n: 3;
+}
+
+span:nth-child(4) {
+    --n: 4;
+}
+/* Estilos adaptables para pantallas pequeñas */
+@media(max-width:768px) {
     .tittle{
         position: relative;
         left: 30px;
-        top: 300px;
-        color: rgb(131, 19, 122);
-        font-size: 7rem;
-        margin: 0;
+        font-size:5rem ;
     }
+    .Phones{
+        position: absolute;
+        left: 32px;
+        bottom: 20px;
+        z-index: 2;
+
+    }
+    ul{
+        position: relative;
+        top: 90px;
+        left: 20px;
+        z-index: 5;
+    }
+}
 
 </style>
-<body background="images/freepik__expand__21154.png">
-    <div class="container">
+<body background="images/pexels-codioful-7130560.jpg" >
+
+        
         <h1 class="tittle">Evento</h1>
-        <img src="images/Frame 3.png" alt="" class="Phones"> 
-    </div>
+        <img src="images/Frame 3.png" alt="" class="Phones">
+         <!-- Enlace al inicio del evento -->
+        <a href="principal.html">
+            <ul>
+                <li>
+
+                    start
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                
+                </li>
+            </ul>
+        </a>
 </body>
 </html>
