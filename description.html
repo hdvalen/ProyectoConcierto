@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/description.css">
+    <link rel="stylesheet" href="css/contEmergente.css">
     <title>Descrpcion</title>
 </head>
 <body>
@@ -39,22 +40,24 @@
         </header>
         <footer>
         <div class="container3">
-            <div>
+            <div class="start-cont">
             <p>Start from</p>
             <strong>IDR1.100.000</strong>
             </div>
-            <div>
-           <a class="ticket-button" href="ticket.html">Buy Ticket</a>
-
-           <dialog aria-labelledby="dialog_title" aria-describedby="dialog_description">
-            <img src="https://native-dialog.surge.sh/location-service.svg" alt="Illustration of Location Services" />
-            <h2 id="dialog_title" class="h2">Desea Continuar ? </h2>
-            <div class="flex flex-space-between">
-              <button id="close_dialog">Cerrar</button>
-              <button id="confirm_dialog" class="cta">Confirmar</button>
-            </div>
-          </dialog>
-            </div>
+            <!-- contenedor emergente -->
+            <main>
+          
+            <button id="open_dialog">Buy Ticket</button>
+          
+            <dialog aria-labelledby="dialog_title" aria-describedby="dialog_description">
+              <img src="https://native-dialog.surge.sh/location-service.svg" alt="Illustration of Location Services" />
+              <h2 id="dialog_title" class="h2">Use location services?</h2>
+              <div class="flex flex-space-between">
+                <button id="close_dialog">Close</button>
+                <button id="confirm_dialog" class="cta">Confirm</button>
+              </div>
+            </dialog>
+          </main>
         </div>
      </footer>
     </div>
