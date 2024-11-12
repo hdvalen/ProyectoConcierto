@@ -2,7 +2,9 @@ const SearchList = [
     "Events Near You",
     "Trending eventes",
     "Music Concert",
-    "Stand Up Show"
+    "Stand Up Show",
+    "Coldplay",
+    "Thear"
 ]
 
 const resultBox = document.querySelector(
@@ -15,20 +17,14 @@ const inputBox = document.querySelector(
 
 const displayResults = function (result){
     const resultHTML = result.map(function (busqueda){
-        return `<li onclick=selectInput(this)> 
-            ${busqueda} 
-        </li> `;
-    });
+        return `<li onclick=selectInput(this)> ${busqueda} </li> `;});
 
-    resultBox.innerHTML ='<ul>' + 
-        resultHTML.join("") + 
-    '</ul>';
-}
+    resultBox.innerHTML ='<ul>' + resultHTML.join("") +'</ul>';}
 
 inputBox.onkeyup = function(e){
-    let result = [ ];
+    let result = [];
 
-    const input = InputBox.value.toLowerCase();
+    const input = inputBox.value.toLowerCase();
 
     if (input.length === 0){
         resultBox.innerHTML="";
@@ -43,6 +39,6 @@ inputBox.onkeyup = function(e){
 };
 
 function selectInput(busqueda){
-    InputBox.value = busqueda.innerText;
+    inputBox.value = busqueda.innerText;
     resultBox.innerHTML="";
 }
