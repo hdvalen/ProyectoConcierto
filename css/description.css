@@ -13,18 +13,7 @@ body{
     margin-left: 20px;
     margin-top: 15px;
 }
-.read-more{
-    position: absolute;
-    width: 100px;
-    text-align: justify;
-    background: linear-gradient(to top, #fff);
-    cursor: pointer;
-    height: 30px;
-}
-.read-more:hover{
-    background: linear-gradient(to top, transparent);
-    max-height: 200px;
-}
+
 /* Boton con contenedor emergente 
 
 .ticket-button:focus {
@@ -119,7 +108,25 @@ body{
 .text{
     text-align: justify;
     max-height: 100px;
-    overflow: hidden;   
+    overflow: hidden;  
+    position: relative; 
+}
+.text p{
+    margin-bottom: 20px;
+}
+.read-more{
+    position: absolute;
+
+    width: 100%;
+    text-align: justify;
+    padding: 10px 0;
+    background: linear-gradient(to top, #fff, transparent);
+    cursor: pointer;
+    
+}
+.read-more:hover{
+    background: linear-gradient(to top, #eee, transparent);
+    max-height: 200px;
 }
 iframe{
     border-radius: 10px;
@@ -204,5 +211,6 @@ iframe{
     }
     .container3{
         width: 440px;
+        left: 20px;
     }
 }
